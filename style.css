@@ -1,2 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans&display=swap");
-@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+@import url("classes.css");
+
+body {
+    background-color: #121212;
+    color: lightgrey
+}
+
+nav#nav {
+    background-color: #202020;
+    padding: 0.8em !important;
+}
+
+nav#gradient {
+    padding: 0.3em;
+    background-image: linear-gradient(to right, dodgerblue 40%,  purple 60%);
+}
+
+main {
+    width: 100vw;
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 1em
+}
