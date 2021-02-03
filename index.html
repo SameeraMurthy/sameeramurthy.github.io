@@ -5,39 +5,171 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sameera M.</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-t6I8D5dJmMXjCsRLhSzCltuhNZg6P10kE0m0nAncLUjH6GeYLhRU1zfLoW3QNQDF" crossorigin="anonymous" defer></script>
         <link href="style.css" rel="stylesheet">
     </head>
 
     <body>
+
         <header id="header" class="header">
-            <nav id="gradient"></nav>
-            <nav id="nav" class="navbar navbar-expand-sm justify-content-center">
-                <ul class="nav nav-pills">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="/">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/blog">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
-                  </li>
-                </ul>
+            <nav class="navbar navbar-expand-md px-3">
+                <div class="container-fluid">
+                  <a class="link-body" href="#">
+                    Sameera Murthy
+                  </a>
+                  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+                    <svg class="gi gi-menu fs-5" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 6h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 5h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 5h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z"/>
+                    </svg>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-5 mr-md-5 mb-md-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Github</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" id="navbarDropdownOne" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Projects
+                            <svg class="gi gi-arrow-down ml-1 align-text-top" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.882 16.158a2 2 0 0 0 2.565-.279l.114-.13 4-5a2 2 0 0 0-1.412-3.244L16 7.5H8a2 2 0 0 0-1.659 3.117l.097.132 4 5a2 2 0 0 0 .201.216l.112.096.132.097z"/>
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownOne">
+                          <a class="dropdown-item" href="#">All</a>
+                          <a class="dropdown-item" href="#">Github</a>
+                        </div>
+                      </li>
+                    </ul>
+                    <form>
+                      <div class="input-group">
+                        <div class="input-group-item">
+                          <svg class="gi gi-search fs-3" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 3a8 8 0 0 1 8 8c0 1.848-.627 3.55-1.68 4.905l3.386 3.388a1 1 0 0 1-1.32 1.497l-.094-.083-3.388-3.386C14.55 18.373 12.848 19 11 19a8 8 0 1 1 0-16zm0 2a6 6 0 1 0 0 12 6 6 0 1 0 0-12z"/>
+                          </svg>
+                        </div>
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                      </div>
+                    </form>
+                  </div>
+                </div>
             </nav>
         </header>
-        <br>
-        <br>
-        <main id="main" class="main">
-            <h1 class="center">Sameera M.</h1>
-            <br>
-            <p class="center">Yes. That's Me.</p>
-        </main>
-        <footer id="footer" class="footer">
 
+        <main id="main" class="main">
+            <section class="container-fluid d-flex align-items-center justify-content-center" style="height: 80vh;">
+                <div class="d-block text-center">
+                    <h1 class="my-3">Sameera M.</h1>
+                    <h4 class="my-4">A random web developer.</h4>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li>
+                          <a class="btn btn-auto d-inline-flex flex-shrink-0 align-items-center justify-content-center p-0 rounded-circle" style="width: 3rem; height: 3rem;" href="#">
+                            <i class="ri-youtube-fill ri-2x text-danger"></i>
+                          </a>
+                        </li>
+                        <li class="mx-3">
+                          <a class="btn btn-auto d-inline-flex flex-shrink-0 align-items-center justify-content-center p-0 rounded-circle" style="width: 3rem; height: 3rem;" href="#">
+                            <i class="ri-github-fill ri-2x" style="color: black;"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="btn btn-auto d-inline-flex flex-shrink-0 align-items-center justify-content-center p-0 rounded-circle" style="width: 3rem; height: 3rem;" href="#">
+                            <i class="ri-facebook-fill text-primary ri-2x"></i>
+                          </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="container-fluid themewise p-5 text-center">
+                <div class="row">
+                    <div class="col-md p-5">
+                        <h2>About</h2>
+                        <hr class="sm">
+                        <div class="">
+                            <p>I am Sameera, a student/dev that<br>likes Web Development, and Design.</p><br>
+                            <div class="d-inline-block">
+                                <p class="pb-3">Things I like:</p>
+                                <ul class="text-left">
+                                    <li>🔭 Astronomy</li>
+                                    <li>➗ Mathematics</li>
+                                    <li>👨‍💻 Programming</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md p-5">
+                        <h2>Projects</h2>
+                        <hr class="sm">
+                    </div>
+                </div>
+            </section>
+            <section class="p-2">
+                &nbsp;
+            </section>
+        </main>
+
+        <footer class="shadow" style="padding-top: 4rem; padding-bottom: 2.5rem;">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md">
+                  <ul class="list-unstyled d-flex flex-wrap mb-5 mb-md-0">
+                    <li class="mr-5">
+                      <a class="link-body" href="#">Link</a>
+                    </li>
+                    <li class="mr-5">
+                      <a class="link-body" href="#">Link</a>
+                    </li>
+                    <li class="mr-5">
+                      <a class="link-body" href="#">Link</a>
+                    </li>
+                    <li>
+                      <a class="link-body" href="#">Link</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md">
+                  <ul class="list-unstyled d-flex justify-content-md-end">
+                    <li class="mr-3">
+                      <a class="btn btn-auto d-inline-flex flex-shrink-0 align-items-center justify-content-center p-0 rounded-circle" style="width: 3rem; height: 3rem;" href="#">
+                        <i class="ri-youtube-fill ri-2x text-danger"></i>
+                      </a>
+                    </li>
+                    <li class="mr-3">
+                      <a class="btn btn-auto d-inline-flex flex-shrink-0 align-items-center justify-content-center p-0 rounded-circle" style="width: 3rem; height: 3rem;" href="#">
+                        <i class="ri-github-fill ri-2x" style="color: black;"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn btn-auto d-inline-flex flex-shrink-0 align-items-center justify-content-center p-0 rounded-circle" style="width: 3rem; height: 3rem;" href="#">
+                        <i class="ri-facebook-fill text-primary ri-2x"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr style="margin-bottom: 2.5rem;" role="presentation">
+              <div class="row">
+                <div class="col-sm">
+                  <p class="mb-3 mb-sm-0">&copy; <script>document.write(new Date().getFullYear())</script> Sameera</p>
+                </div>
+                <div class="col-sm">
+                  <ul class="list-unstyled d-flex flex-wrap justify-content-sm-end">
+                    <li class="mr-5">
+                      <a class="link-body" href="#">Link</a>
+                    </li>
+                    <li>
+                      <a class="link-body" href="#">Link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
         </footer>
+
+        
     </body>
 
 </html>

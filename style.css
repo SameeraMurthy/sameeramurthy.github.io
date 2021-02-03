@@ -1,29 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Google+Sans&display=swap");
-@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
-@import url("styles/classes.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/yanchokraev/grayshift@1.0.0/css/grayshift.min.css");
+@import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");
 
-* {
-    font-family: "Google Sans";
+* { font-family: "Poppins", "Jost", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif }
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 18px;
 }
-
-body {
-    background-color: #121212;
-    color: lightgrey
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
 }
-
-nav#nav {
-    background-color: #202020;
-    padding: 0.8em !important;
+::-webkit-scrollbar-corner {
+    background-color: transparent;
 }
-
-nav#gradient {
-    padding: 0.3em;
-    background-image: linear-gradient(to right, dodgerblue 40%,  purple 60%);
+::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    background-color: #191e2b;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
 }
 
 main {
-    width: 100vw;
-    max-width: 50em;
-    margin: 0 auto;
-    padding: 1em
+    background-image: url("./shiny.png");
+    background-attachment: fixed;
 }
+
+nav, footer, .themewise {
+    background-color: #191e2b !important;
+}
+
+.form-control, .input-group-item, .btn, .dropdown-menu {
+    background-color: var(--dark-600);
+}
+
+hr.sm {
+    max-width: 100px;
+    margin: 20px auto;
+}
+
+/* li::marker {
+    content: "i";
+} */
